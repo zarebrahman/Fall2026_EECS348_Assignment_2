@@ -1,0 +1,17 @@
+NEXT
+READ
+COUNT
+EMAIL OtherPerson,Old other email,01-01-2020
+EMAIL Peer,Older peer email,06-01-2025
+EMAIL Peer,Newer peer email,06-02-2025
+EMAIL Boss,CEO request,01-01-2024
+NEXT
+NEXT
+READ
+READ
+NEXT
+COUNT
+READ
+READ
+NEXT
+COUNT

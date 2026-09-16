@@ -1,0 +1,21 @@
+Write a complete C program for EECS 348 Assignment 2 using only standard C libraries. The program prioritizes emails for a company CEO by implementing a priority queue as a list-based MaxHeap created from scratch. Do not use a pre-existing heap module.
+
+Each input line is one of these commands:
+
+EMAIL <sender category>,<subject line>,<date>
+NEXT
+READ
+COUNT
+
+The sender category is Boss, Subordinate, Peer, ImportantPerson, or OtherPerson. Their priority from highest to lowest is Boss, Subordinate, Peer, ImportantPerson, and OtherPerson. If two emails have the same sender category, the newer date has higher priority. Subjects may contain spaces but not commas. Dates use MM-DD-YYYY.
+
+NEXT displays the highest-priority unread email without deleting it in exactly this format:
+
+Next email:
+      Sender: <sender>
+      Subject: <subject>
+      Date: <date>
+
+READ deletes the highest-priority unread email without displaying it. COUNT prints "There are <count> emails to read." The program must safely handle NEXT or READ on an empty queue, repeated NEXT commands, and repeated READ commands. It should accept an optional test-file name as a command-line argument and otherwise read from standard input.
+
+Use a manually implemented array/list MaxHeap with functions for insertion, viewing the maximum, and removing the maximum. Include clear comments, compile with gcc using -std=c11 -Wall -Wextra -pedantic, and provide the complete raw C code only.
